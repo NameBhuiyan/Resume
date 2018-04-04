@@ -57,9 +57,7 @@ jQuery(document).ready(function() {
 		jQuery("html,body").animate({scrollTop:$path}, 1000);	
 	});
 		/* Act on the event */
-		jQuery('.navbar ul li ').click(function() {
-			jQuery(this).addClass('active').parents().find('a').siblings().removeClass('active');
-					});	
+			
 	 });
 		
 
