@@ -327,6 +327,126 @@ ul li:hover{
 .active {
 	background:#2ecc71; 
 }
+/************ loader ****/
+.loader{
+	background: white;
+	position: fixed;
+	width: 101%;
+	height: 100vh;
+	z-index: 999999;
+	margin-left: -13px;
+	
+}
+.main-sq {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 70px;
+	widows: 70px;
+	color: tomato;
+	font-family: fantasy;
+	font-size: 12px;
+	line-height: -150px;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+}
+.sm1 {
+	
+	
+	width: 27px;
+	height: 27px;
+	background: tomato;
+	position: absolute;
+	top:25%;
+	left: 0%;
+}
+.sm2 {
+	
+	
+	width: 27px;
+	height: 27px;
+	background: tomato;
+	position: absolute;
+	top:25%;
+	left: 25%;
+	animation: effect1 1s infinite linear;
+}
+.sm3 {
+	
+	
+	width: 27px;
+	height: 27px;
+	background: tomato;
+	position: absolute;
+	top:0%;
+	left: 0%;
+	animation: effect2 1.5s infinite linear;
+	
+
+}
+.sm4 {
+	
+	width: 27px;
+	height: 27px;
+	background: tomato;
+	position: absolute;
+	top:0%;
+	left: 25%;
+	animation: effect3 1s infinite linear;
+
+}
+.bigsqr {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	transform-origin: bottom left;
+	animation: effectForBig 1s infinite linear;
+}
+@-webkit-keyframes  effect1 {
+	0%{
+		transform: translateY(-50px);
+	}
+	25%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+@-webkit-keyframes effect2 {
+	0%{
+		transform: translateY(-50px);
+	}
+	50%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+@-webkit-keyframes effect3 {
+	0%{
+		transform: translateY(-50px);
+	}
+	75%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+@-webkit-keyframes effectForBig {
+	0%{
+		transform: scale(1);
+	}
+	90%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0.5);
+	}
+}
 /********* About Me **************/
 .aboutme {
 	background: #f2f2f1;
